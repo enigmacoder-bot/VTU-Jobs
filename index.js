@@ -124,5 +124,7 @@ function getNewJobs() {
 }
 
 // Get job updates every week
-// scheudle.scheduleJob("0 1 * * 0", getNewJobs);
-scheudle.scheduleJob("* * * * *", getNewJobs);
+scheudle.scheduleJob("0 1 * * 0", getNewJobs);
+
+// get job updates every minute
+// scheudle.scheduleJob("* * * * *", getNewJobs);
